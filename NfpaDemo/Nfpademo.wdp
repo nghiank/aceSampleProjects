@@ -1,0 +1,49 @@
+*[1]Sample Project - Schematics and Panel Layout
++[1]%SL_DIR%NFPA/;%SL_DIR%NFPA/1-/;%SL_DIR%pneu_iso125/;%SL_DIR%hyd_iso125/;%SL_DIR%pid/
++[2]ACE_NFPA_MENU.DAT
++[3]%SL_DIR%panel/
++[4]ACE_PANEL_MENU_NFPA.DAT
++[5]1
++[9]1,2,3
++[10]0
++[11]1
++[12]0
++[13]0
++[14]0
++[15]0
++[18]0
++[21]0
++[22]
++[23]0
++[24]
++[25]1
++[26](0.00000 0.03125 0.00000 )
++[29]0
++[30]0.00
+===Flow and Interconnection diagram, I/O list
+=====SUB=SCHEMATIC
+demo01.dwg
+===3-phase motor control, Control circuit
+=====SUB=SCHEMATIC
+demo02.dwg
+===Power supplies, I/O module feeds
+=====SUB=SCHEMATIC
+demo03.dwg
+===Control schematic
+=====SUB=SCHEMATIC
+demo04.dwg
+===PLC I/O - Inputs - Slot 1
+=====SUB=SCHEMATIC
+demo05.dwg
+===PLC I/O - Inputs - Slots 3, 4
+=====SUB=SCHEMATIC
+demo06.dwg
+===PLC I/O - Input Slot 5, Output Slot 6
+=====SUB=SCHEMATIC
+demo07.dwg
+===Operator Station layout
+=====SUB=PANEL
+demo08.dwg
+===Main Control Panel layout
+=====SUB=PANEL
+demo09.dwg

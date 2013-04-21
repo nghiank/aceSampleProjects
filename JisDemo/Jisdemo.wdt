@@ -1,0 +1,92 @@
+;; *** Defines title block attribute "mapping" info ***
+;;
+;; The name of this file can either match the current project
+;; "wdp" file name (but with a ".wdt" extension) or be named
+;; "default.wdt" (which WD uses if a project-specific one is not
+;; found).
+;;
+;; The name of the existing drawing's title block BLOCK is given
+;; below in this format: BLOCK = <block name>. For example, if
+;; your standard title block block name is "TITLE" then the
+;; entry would be  BLOCK = TITLE. If your title block consists
+;; of multiple blocks, let's say a title block and a revision block,
+;; encode the "BLOCK = " line listing all blocks separated by commas.
+;; For example, if there are two blocks, TITLEBLK and REVBLOCK, then
+;; encode the line as "BLOCK = TITLEBLK,REVBLOCK". If you have multiple
+;; sizes such as TITLE-A, TITLE-B, TITLE-D and all have the same
+;; basic target attributes, encode the line with a wild-card
+;; "BLOCK = TITLE-*" so that it always finds the title block, no matter
+;; what size is used on the drawing.
+;;
+;; Attributes on title block are "mapped" to WD project data lines
+;; and several WD CONFIG values. The form of each mapping line below
+;; is either <TitleBlock attr name> = LINEx
+;;   where "x" = WD project data line number (LINE1 thru LINE24)
+;; or <TitleBlock attr name> = xx    where "xx" can be any of these:
+;;   = SHEET for WD CONFIG's sheet value (the %S value)
+;;   = SHEETMAX for count of dwgs in the current project (ex: the "N"
+;;       value in title block "SHEET x of N")
+;;   = DWGNAM for the drawing name value (the %D value)
+;;   = IEC_P or IEC_I or IEC_L for the drawing-wide IEC defaults (the %P,%I,%L values)
+;;   = DWGDESC for the one-line description text for each drawing that
+;;       can be displayed in WD's PROJ drawing list dialog. To map "|" delimited
+;;       DWGDESC text to multiple attributes, apply the "|" delimiter to the attr
+;;       list. Ex:  TITLE-1|TITLE-2|TITLE-3 = DWGDESC
+;;   = DWGSEC for optional "Sec" code entered on PROJ drawing list dialog
+;;   = DWGSUB for optional "Sec/Sub" code entered on PROJ drawing list dialog
+;;   = FILENAME for ".dwg" filename without path or extension
+;;   = FULLFILENAME for full path/filename
+;;   = FILENAMEEXT for ACAD file name + ext
+;;   = PLOTTIME for plot time stamp (24hr military format)
+;;   = PLOTTIME12 for plot time stamp (12-hour am/pm format)
+;;   = PLOTDATE for plot date stamp (MM:DD:YYYY format)
+;;   = PLOTDATEMMDDYY for plot date stamp (MM:DD:YY format)
+;;   = PLOTDATEYYMMDD for plot date stamp (YY:MM:DD format)
+;;   = PLOTDATEYYYYMMDD for plot date stamp (YYYY:MM:DD format)
+;;
+;;   This "xx" value can also be any fixed text within quotes,
+;;   ex. DRAWNBY = "Joe Engineer"
+;; Note: if the title block's target attribute tag name contains one
+;;   or more "wild card characters" (they are: # @ . * ? ~ [ ] - )
+;;   then the name MUST be preceeded by a backwards apostophy char `
+;;   Example:  `[REV] = LINE5  (where title blk attrib name is "[REV]")
+;;
+BLOCK = JIS_TBLOCK_A0,JIS_TBLOCK_A1,JIS_TBLOCK_A2,JIS_TBLOCK_A3(P),JIS_TBLOCK_A3(L),JIS_TBLOCK_A4(L),JIS_TBLOCK_A4(P)
+FILENAME0 = FILENAME
+PAGE0 = SHEET
+LPAGE0 = SHEETMAX
+INFO1 = DWGDESC
+ORDER1 = LINE1
+ORDER2 = LINE2
+DESIGN1 = LINE3
+DESIGN2 = LINE4
+DESIGN3 = LINE5
+DESIGN4 = LINE6
+SCALE1 = LINE7
+SCALE0 = LINE8
+REVDESIGN1 = LINE9
+REVDATEY1 = LINE10
+REVDATEM1 = LINE11
+REVDATED1 = LINE12
+REVINFO11 = LINE13
+REVDESIGN2 = LINE14
+REVDATEY2 = LINE15
+REVDATEM2 = LINE16
+REVDATED2 = LINE17
+REVINFO21 = LINE18
+REVDESIGN3 = LINE19
+REVDATEY3 = LINE20
+REVDATEM3 = LINE21
+REVDATED3 = LINE22
+REVINFO31 = LINE23
+REVDESIGN4 = LINE24
+REVDATEY4 = LINE25
+REVDATEM4 = LINE26
+REVDATED4 = LINE27
+REVINFO41 = LINE28
+REVDESIGN5 = LINE29
+REVDATEY5 = LINE30
+REVDATEM5 = LINE31
+REVDATED5 = LINE32
+REVINFO51 = LINE33
+

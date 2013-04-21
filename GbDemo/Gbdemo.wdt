@@ -1,0 +1,84 @@
+;; *** 定义标题栏属性“映射”信息 ***
+;;
+;; 此文件的名称可以匹配当前项目
+;;“wdp”文件名 (但其扩展名为“.wdt”)，也可以是
+;;“default.wdt”(如果未找到特定于项目的名称，WD 将使用此名称)。
+;;
+;; 现有图形的标题栏的 BLOCK 将按以下格式
+;; 给出: BLOCK = <块名>。例如，如果
+;; 标准标题栏的块名为“TITLE”，则
+;; 条目将是 BLOCK = TITLE。如果标题栏由多个块
+;; 组成，则称为一个标题块和一个修改块，
+;; 它们构成“BLOCK = ”行的编码，该行列出了逗号分隔的所有块。
+;; 例如，如果有两个块“TITLEBLK”和“REVBLOCK”，则
+;; 该行的编码为“BLOCK = TITLEBLK,REVBLOCK”。如果存在不同大小的标题块
+;;（例如 TITLE-A、TITLE-B 和 TITLE-D），并且所有这些块都具有相同的
+;; 基本目标属性，那么为该行编码时请使用通配符
+;;“BLOCK = TITLE-*”，以便不论图形中使用的块
+;; 的大小如何，总能找到标题块。
+;;
+;; 标题块上的属性会映射到 WD 项目数据行
+;; 和若干个配置值中。以下每个映射行的格式可以是
+;; <标题栏的属性名> = LINEx，
+;; 其中“x”是项目数据行编号 (LINE1 到 LINExx)；
+;; 也可以是 <标题栏的属性名> = xx，其中“xx”可以是以下任何值之一:
+;; = SHEET，表示 WD 配置的表值 (%S 值)
+;;   = 当前项目中图形数的 SHEETMAX (例如:“N”
+;;“SHEET x of N”中的“N”值)
+;; = DWGNAM，表示图形名称值 (%D值)
+;; = IEC_P 或 IEC_I 或 IEC_L，表示整个图形中的 IEC 默认值 (%P 值、%I 值和 %L 值)
+;; = DWGDESC，表示图形的单行描述文字，该文字可以
+;; 显示在 WD 的项目图形列表对话框中要将以“|”分隔的
+;; 图形描述文字映射到多个属性，请将“|”分隔符应用到
+;; 属性列表。例如: TITLE-1|TITLE-2|TITLE-3 = DWGDESC
+;; = DWGSEC，表示在项目图形列表对话框中输入的可选“分区”代号
+;; = DWGSUB，表示在项目图形列表对话框中输入的可选“分区/子项”代号
+;; = FILENAME，表示不带路径或扩展名的“.dwg”文件名
+;; = FULLFILENAME，表示完整的路径/文件名
+;; = FILENAMEEXT，表示 ACAD 文件名 + 扩展名
+;; = PLOTTIME，表示打印时间戳记 (24 小时制军用格式)
+;; = PLOTTIME12，表示打印时间戳记 (12 小时制，上午/下午格式)
+;; = PLOTDATE，表示打印日期戳记 (MM:DD:YYYY 格式)
+;; = PLOTDATEMMDDYY，表示打印日期戳记 (MM:DD:YY 格式)
+;; = PLOTDATEYYMMDD，表示打印日期戳记 (YY:MM:DD 格式)
+;; = PLOTDATEYYYYMMDD，表示打印日期戳记 (YYYY:MM:DD 格式)
+;;
+;; 此“xx”的值还可以是括在引号中的任何固定文字，
+;; 例如，DRAWNBY = "Joe Engineer"
+;; 注意: 如果标题栏的目标属性标记名称中包含一个
+;; 或多个通配符 (# @ . * ? ~ [ ] - )
+;; 则该名称必须有一个前导重音符 `
+;; 例如: `[REV] = LINE5 (其中标题栏属性名称为“[REV]”)
+;;
+BLOCK=GB_TitleBlock
+图号=FILENAME
+文件名称=DWGDESC
+总数=SHEETMAX
+页数=SHEET
+项目名称=LINE1
+设计=LINE2
+制图=LINE3
+校对=LINE4
+审核=LINE5
+工艺=LINE6
+标准=LINE7
+批准=LINE8
+日期=LINE9
+数量=LINE10
+比例=LINE11
+REV1=LINE12
+REV1DET=LINE13
+BY1=LINE14
+RD1=LINE15
+REV2=LINE16
+REV2DET=LINE17
+BY2=LINE18
+RD2=LINE19
+REV3=LINE20
+REV3DET=LINE21
+BY3=LINE22
+RD3=LINE23
+REV4=LINE24
+REV4DET=LINE25
+BY4=LINE26
+RD4=LINE27

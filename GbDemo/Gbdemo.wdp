@@ -1,0 +1,210 @@
+*[1]项目名称
+*[2]设计师
+*[3]制图员
+*[4]校对者
+*[5]审核者
+*[6]工艺员
+*[7]标准化
+*[8]批准人
+*[9]2005
+*[10]1
+*[11]1:1
+*[12]标记
+*[13]更改号
+*[14]修改者
+*[15]修改日期
++[1]%SL_DIR%GB2;%SL_DIR%GB2/1-/;%SL_DIR%pneu_iso125/;%SL_DIR%hyd_iso125/;%SL_DIR%pid/
++[2]ACE_GB_MENU.DAT
++[3]%SL_DIR%panel/
++[4]ACE_PANEL_MENU_GB.DAT
++[5]5
++[6]0
++[7]
++[8]0
++[9]14,13,10,12,11,9,8,6,5,4,3,2,7,1
++[10]3
++[11]1
++[12]0
++[13]0
++[14]2
++[15]0
++[16]%T=%W (%2)
++[17]%W (%2)
++[18]0
++[19]0
++[20]
++[21]1
++[22]PHASE_L1;%NL1;1;;PHASE_L2;%NL2;1;;PHASE_L3;%NL3;1;;MOTOR_U1;%NU1;1;;MOTOR_V1;%NV1;1;;MOTOR_W1;%NW1;1;;NEUTRAL;%NN;1;;PE;PE%N;1;
++[23]0
++[24]
++[25]1
++[26](0 0.03125 0 )
++[27]
++[28]0
++[29]0
++[30]0.000000
++[31]0
++[32]1
+?[0]V
+?[1]5
+?[2]S
+?[3]1
+?[4],A,B,C,D,E,F,G,H,J
+?[5]%F%N
+?[6]S
+?[7]1
+?[8],A,B,C,D,E,F,G,H,J,K,L,M,N
+?[9]%N
+?[10]1
+?[11]40
+?[12]400
+?[14]%N
+?[15]1
+?[16]0
+?[17]20
+?[18]
+?[19]
+?[20]85
+?[21]50
+?[22]0,1,2,3,4,5,6,7,8
+?[23]1
+?[24]1
+?[25]-
+?[26]RED*,BLK*,WHT*,BLU*,YEL*,GRN*,VIO*,TAN*,GRY*
+?[27]WIRENO
+?[28]WIRECOPY
+?[29]WIREFIXED
+?[30]1.0
+?[31]2.0
+?[32]TAGS
+?[33]XREF
+?[34]DESC
+?[35]TERMS
+?[36]XREFCHILD
+?[37]DESCCHILD
+?[38]LOC
+?[39]POS
+?[40]MISC
+?[41]0
+?[42]1
+?[43]1
+?[44]LINK
+?[45]SYMS
+?[47]%S.%N
+?[48]TAGFIXED
+?[49]1
+?[50]65
+?[51]
+?[52]
+?[53]
+?[54]WIREREF
+?[55]
+?[56]_MULTI_WIRE
+?[57]1
+?[58]LOCBOX
+?[59]
+?[60]1
+?[61]0
+?[62]0
+?[63]
+?[64]1
+?[65],
+?[66]0
+?[67]1
+?[68]NO,NC,NONC
+?[69]ACE-METRIC
+?[70]%T
+?[71]1,2,3,5
+?[72]W1,T1,TYPE,T2,W2,REF,SH,SHDWGNAM,FILENAME,FULLFILENAME
+?[73]MC,MC,MC,MC,MC,MC,MC,MC,L,L
+?[74]0.0
+?[75]1
+?[76]0.000000,1.000000,0.000000
+===设备布局
+=====SUB=SCHEMATIC
+001.dwg
+===电源分配
+
+=====SUB=SCHEMATIC
+002.dwg
+===直流电源
+=====SUB=SCHEMATIC
+003.dwg
+===主控制系统
+=====SUB=SCHEMATIC
+004.dwg
+===辅控制系统
+=====SUB=SCHEMATIC
+005.dwg
+===真空泵控制系统
+=====SUB=SCHEMATIC
+006.dwg
+===辅控制系统
+=====SUB=SCHEMATIC
+007.dwg
+===控制系统
+=====SUB=SCHEMATIC
+008.dwg
+===PLC I/O支架安装排布(1746-A7)
+=====SUB=SCHEMATIC
+009.dwg
+===PLC I/O 支架 1 / SLOT 1  AB-1746-OW16
+=====SUB=SCHEMATIC
+010.dwg
+===PLC I/O 支架 1 / SLOT 1  AB-1746-OW16
+=====SUB=SCHEMATIC
+011.dwg
+===PLC I/O 支架 1 / SLOT 2  AB-1746-OW16
+=====SUB=SCHEMATIC
+012.dwg
+===PLC I/O 支架 1 / SLOT 2  AB-1746-OW16
+=====SUB=SCHEMATIC
+013.dwg
+===PLC I/O 支架 1 / SLOT 3  AB-1746-IB16
+=====SUB=SCHEMATIC
+014.dwg
+===PLC I/O 支架 1 / SLOT 3  AB-1746-IB16
+=====SUB=SCHEMATIC
+015.dwg
+===PLC I/O 支架 1 / SLOT 4  AB-1746-IB16
+=====SUB=SCHEMATIC
+016.dwg
+===PLC I/O 支架 1 / SLOT 4  AB-1746-IB16
+=====SUB=SCHEMATIC
+017.dwg
+===PLC I/O 支架 1 / SLOT 5  AB-1746-NO4I
+=====SUB=SCHEMATIC
+018.dwg
+===PLC I/O 支架 1 / SLOT 6  AB-1746-NI4
+=====SUB=SCHEMATIC
+019.dwg
+===急停系统
+=====SUB=SCHEMATIC
+020.dwg
+===安全系统
+=====SUB=SCHEMATIC
+021.dwg
+===控制线路
+=====SUB=SCHEMATIC
+022.dwg
+===操作控制台
+=====SUB=PANEL
+023.dwg
+===控制面板布局图
+=====SUB=PANEL
+024.dwg
+===端子排
+=====SUB=PANEL
+025.dwg
+===端子表 - X3
+=====SUB=PANEL/TERMINAL PLANS
+Tabular TermLay\T01.dwg
+===端子表 - X2
+=====SUB=PANEL/TERMINAL PLANS
+Tabular TermLay\T02.dwg
+===端子表 - X4
+=====SUB=PANEL/TERMINAL PLANS
+Tabular TermLay\T03.dwg
+===端子表 - X1
+=====SUB=PANEL/TERMINAL PLANS
+Tabular TermLay\T04.dwg

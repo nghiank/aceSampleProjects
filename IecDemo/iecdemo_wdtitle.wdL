@@ -1,0 +1,14 @@
+LINE1=Customer
+LINE2=Drawing No.
+LINE3=Job Model No.
+LINE4=Job S/N
+LINE5=Job Year
+LINE6=Cust Location
+LINE7=Mach Model No.
+LINE8=Mach S/N
+LINE9=Year Built
+LINE10=Supply voltage
+LINE11=KW consumption
+LINE12=Max Supply amp
+LINE13=Ctrl voltage
+LINE14=Rev level
